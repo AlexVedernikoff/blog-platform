@@ -1,0 +1,110 @@
+{
+    "extends": [
+        "airbnb",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+      ],
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "requireConfigFile": false,
+        "babelOptions": {
+          "presets": ["@babel/preset-react"]
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "curly": [
+            "error"
+        ],
+        "max-depth": [
+            "warn",
+            4
+        ],
+        "id-length": [
+            "warn",
+            {
+                "exceptions": [
+                    "i",
+                    "j"
+                ],
+                "min": 2
+            }
+        ],
+        "no-lonely-if": [
+            "error"
+        ],
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-restricted-syntax": "off",
+        "class-methods-use-this": "off",
+        "jsx-a11y/href-no-hash": [
+            "off"
+        ],
+        "jsx-a11y/anchor-is-valid": [
+            "off"
+        ],
+        "jsx-a11y/label-has-associated-control": [
+            "error",
+            {
+                "assert": "either"
+            }
+        ],
+        "react/function-component-definition": [
+            2,
+            {
+                "namedComponents": "arrow-function"
+            }
+        ],
+        "react/state-in-constructor": [
+            "off"
+        ],
+        "react/jsx-props-no-spreading": [
+            "off"
+        ],
+        "react/static-property-placement": "off",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/no-invalid-html-attribute": "off",
+        "react/no-unused-class-component-methods": "off",
+        "import/prefer-default-export": "off",
+        "arrow-body-style": "off",
+        "react/display-name": "off",
+        "react/jsx-boolean-value": "off",
+        "no-unused-vars": "off",
+        "func-names": "off",
+        "import/named": "off",
+        "no-param-reassign": "off",
+        "react/prop-types": "off"
+    },
+    "parser": "@babel/eslint-parser",
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    }
+}
